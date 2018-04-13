@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
- main()
+int main()
 {
-    int BurstTime[20] , p[20], Waiting[20], TurnAround[20], TotalProcesses, i, j, total=0, position,temp;
+    int BurstTime[20] , p[20], Waiting[20], TurnAround[20], TotalProcesses, i, j, total=0, position,temp,x;
     float avg_Waiting,avg_TurnAround;
     printf("Enter total number of process:");
     scanf("%d",& TotalProcesses);
@@ -50,4 +50,20 @@
     avg_TurnAround=(float)total/TotalProcesses;     
     printf("\n\nAverage Waiting Time=%f",avg_Waiting);
     printf("\nAverage Turnaround Time=%f\n",avg_TurnAround);
+    printf("\n press 1 to calculate again or 0 to exit");
+    scanf("%d",x);
+    switch(x)
+    {
+    
+case 1:
+    {
+        main();
+    	break;
+    }
+default :
+    {
+    	return(0);
+    }
+    
+}
 }
