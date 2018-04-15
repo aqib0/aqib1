@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
- main()
+ void project()
  {
    int temp,n,process[10],priority[10],bt[10],wait[10],time[10],i,j;
    float average_wait,average_turnaround;
@@ -53,3 +53,22 @@ average_turnaround=average_turnaround/n;
 printf("\n Average Wait Time : %f \n",average_wait);
 printf("\n Average Turn Around Time : %f \n",average_turnaround);
 }
+main()
+{
+		int x,X;
+	X:
+	printf("enter 1 if you want to calculate and 0 if you dont want to calculate");
+	scanf("%d",&x);
+	while(x==1)
+	{
+	
+	if(x==1)
+	{
+		project();
+		goto X;
+	}
+	else
+	 return(0);
+}
+}
+
